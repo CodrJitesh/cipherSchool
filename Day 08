@@ -1,0 +1,62 @@
+// Q - 1
+#include <iostream>
+using namespace std;
+
+int stringLength(const string &str){
+    return str.size();
+}
+
+int main() {
+    string str = "jitesh singh";
+    cout << stringLength(str) << endl;
+    string str1 = "cipherschools";
+    cout << stringLength(str1) << endl;
+    string str2 = "Aur kya hi likhu";
+    cout << stringLength(str2) << endl;
+    string str3 = "I think that should be enough";
+    cout << stringLength(str3) << endl;
+    return 0;
+}
+
+// Q - 2
+#include <iostream>
+using namespace std;
+
+int countCharacter(const string &str, char ch){
+    int count = 0;
+    for (int i = 0; i < str.size(); i++){
+        if (str[i] == ch){
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    string str = "jitesh singh";
+    cout << countCharacter(str, 'i') << endl;
+    string str1 = "cipherschools";
+    cout << countCharacter(str1, 'o') << endl;
+    string str2 = "Aur kya hi likhu";
+    cout << countCharacter(str2, 'm') << endl;
+    string str3 = "I think that should be enough";
+    cout << countCharacter(str3, 't') << endl;
+    return 0;
+}
+
+// Q - 3
+#include <iostream>
+using namespace std;
+
+string concatenateStrings(const string &str1, const string &str2){
+    
+    return str1 + str2;
+}
+
+int main() {
+    string a = "Jitesh ";
+    string b = "Singh";
+    
+    cout << concatenateStrings(a, b);
+    return 0;
+}
