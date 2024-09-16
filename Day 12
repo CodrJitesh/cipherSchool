@@ -1,0 +1,21 @@
+// Q - 1
+void printLinkedList(Node *head){
+    Node *temp = head;
+    while(temp){
+        cout << temp->value << "->";
+        temp = temp->next;
+    }
+    cout << "NULL";
+}
+
+
+//Q-2
+void insertAtEnd(Node*& head, int data){
+    Node *temp = head;
+    while(temp->next){
+        temp = temp->next;
+    }
+    Node *node = new Node();
+    node->value = data;
+    temp->next = node;
+}
