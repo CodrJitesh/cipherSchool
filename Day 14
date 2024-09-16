@@ -1,0 +1,28 @@
+class Car{
+    public:
+    string brand_name;
+    string model;
+    string engine;
+    int no_of_seats;
+    
+    void display(){
+        cout << "Brand name : " << brand_name << endl;
+        cout << "Model : " << model << endl;
+        cout << "Engine : " << engine << endl;
+        cout << "Number of seats : " << no_of_seats;
+    }
+    
+};
+
+
+
+// q-2
+class Rectangle(){
+    public:
+    int l;
+    int b;
+    Rectangle(Rectangle &r){
+        this->l = r->l;
+        this->b = r->b;
+    }
+}
